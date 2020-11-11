@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <title>signUp</title>
+</head>
+
+<body>
+    <div class="cont">
+        <form id="js-form" class="form_cont" name="loginForm" method="GET" action="">
+            <!-- action 속성에 정의된 경로로 HTTP 요청하도록 -->
+            <div class="title">Service Name</div>
+
+            <div class="id_title">아이디</div>
+            <div class="id_area">
+                <input id="js-id" type="text" name="userId" placeholder="아이디 입력">
+            </div>
+            <div id="js-noti-id" class="noti"></div>
+
+            <div class="ps_title">비밀번호</div>
+            <div class="ps_area">
+                <input id="js-ps" type="password" name="password" placeholder="비밀번호">
+            </div>
+            <div class="ps_area">
+                <input id="js-psCheck" type="password" name="passwordCheck" placeholder="비밀번호 재입력">
+            </div>
+            <div id="js-noti-ps" class="noti"></div>
+
+            <div class="e_title">이메일</div>
+            <div class="e_area">
+                <input id="js-email" type="email" name="email" placeholder="이메일 주소 입력">
+            </div>
+            <div id="js-noti-email" class="noti"></div>
+
+            <div class="name_title">닉네임</div>
+            <div class="name_area">
+                <input id="js-name" type="text" name="name" placeholder="닉네임을 입력해주세요.">
+            </div>
+            <div id="js-noti-name" class="noti"></div>
+
+            <div class="submit_area">
+                <input id="js-submit" type="submit" value="가입하기">
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="js/signUp.js"></script>
+</body>
+
+</html>

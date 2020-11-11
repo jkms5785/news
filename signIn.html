@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/signIn.css">
+    <title>signIn</title>
+</head>
+
+<body>
+    <div class="cont">
+        <form id="js-form" class="form_cont" name="loginForm" method="GET" action="">
+            <!-- action 속성에 정의된 경로로 HTTP 요청하도록 -->
+            <div class="title">Service Name</div>
+
+            <div class="id_area">
+                <input id="js-id" type="text" name="userId" placeholder="아이디">
+            </div>
+
+            <div class="ps_area">
+                <input id="js-ps" type="password" name="Password" placeholder="비밀번호">
+            </div>
+
+            <div id="js-noti" class="noti"></div>
+
+            <div class="submit_area">
+                <input id="js-login" type="submit" value="로그인">
+            </div>
+        </form>
+
+        <div class="signIn">
+            <a href="">
+                <!-- a herf = "signUp page 링크" -->
+                회원이 아니신가요? 회원가입
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/signIn.js"></script>
+</body>
+
+</html>

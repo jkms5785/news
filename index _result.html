@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/newsItem.css">
+    <link rel="stylesheet" href="css/resultItem.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="js-searchForm" name="SerachForm" method="GET" action="">
+        <!-- action 속성에 정의된 경로로 HTTP 요청하도록 -->
+        <header>
+            <div class="header_cont">
+                <div>
+                    <div class="serviceName">Service Name</div>
+                    <div class="searchBar">
+                        <input id="js-searchInput" type="text" value="" name="serach">
+                        <div><img id="js-searchIcon" src="img/search-outline.svg" alt=""></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="signInUp">
+                        <a href="">로그인
+                            <!-- Sign in 주소 -->
+                        </a>
+                    </div>
+                    <div class="signInUp">
+                        <a href="">회원가입
+                            <!-- Sign Up 주소 -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 검색 디테일 -->
+        <div class="wrap">
+            <!-- 언론사 / 통합분류 / 사건사고 -->
+            <div class="detail_cont">
+                <div id="js-mediaBtn" class="js-detailBtn detail_btn">
+                    언론사&nbsp;&#9662;
+                </div>
+                <div id="js-allBtn" class="js-detailBtn detail_btn">
+                    통합분류&nbsp;&#9662;
+                </div>
+                <div id="js-accidentBtn" class="js-detailBtn detail_btn">
+                    사건사고&nbsp;&#9662;
+                </div>
+            </div>
+
+            <!-- 검색 디테일__-->
+            <div class="detail_wrap">
+                <!-- 언론사 -->
+                <div id="js-media" class="category_media">
+                    <div>
+                        <div>
+                            <label class="media_subject">
+                                <input class="js-media1" type="checkbox" name="media1" value="">중앙지
+                            </label>
+                        </div>
+                        <div>
+                            <ul class="media_ul">
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="1">경향신문
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="2">
+                                        국민일보
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="3">내일신문
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="4">동아일보
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="5">문화일보
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="6">서울신문
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="7">세계일보
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="8">조선일보
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="9">중앙일보
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="10">한겨례
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media1-1" type="checkbox" name="media1" value="11">한국일보
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label class="media_subject">
+                                <input class="js-media2" type="checkbox" name="media2" value="">경제지
+                            </label>
+                        </div>
+                        <div>
+                            <ul class="media_ul">
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="1">매일경제
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="2">머니투데이
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="3">서울경제
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="4">아시아경제
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="5">아주경제
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="6">파이낸셜뉴스
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="7">한국경제
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media2-1" type="checkbox" name="media2" value="8">헤럴드경제
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label class="media_subject">
+                                <input class="js-media3" type="checkbox" name="media3" value="">방송사
+                            </label>
+                        </div>
+                        <div>
+                            <ul class="media_ul">
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media3-1" type="checkbox" name="media3" value="1">KBS
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media3-1" type="checkbox" name="media3" value="2">MBC
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media3-1" type="checkbox" name="media3" value="3">OBS
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media3-1" type="checkbox" name="media3" value="4">SBS
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="media_detail">
+                                        <input class="js-media3-1" type="checkbox" name="media3" value="5">YTN
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn_cont">
+                        <button id="js-media-reset">초기화</button>
+                        <button id="js-media-push">적용</button>
+                    </div>
+                </div>
+
+                <!-- 통합분류 -->
+                <div id="js-all" class="category_all">
+                    <div class="overflow">
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="plus js-allBtn">+</span>
+                                <label class="subject">
+                                    <input class="js-all1" type="checkbox" name="all1" value="">정치
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="1">행정_자치
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="2">북한
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="3">국회_정당
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="4">외교
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="5">정치일반
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="6">선거
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all1-1" type="checkbox" name="all1" value="7">청와대
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="plus js-allBtn">+</span>
+                                <label class="subject">
+                                    <input class="js-all2" type="checkbox" name="all2" value="">경제
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="1">자원
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="2">부동산
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="3">금융_재테크
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="4">경제일반
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="5">자동차
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="6">반도체
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="7">산업_기업
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="8">무역
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="9">서비스_쇼핑
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="10">증권_증시
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="11">외환
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="12">취업_창업
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="13">유통
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all2-1" type="checkbox" name="all2" value="14">국제경제
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="plus js-allBtn">+</span>
+                                <label class="subject">
+                                    <input class="js-all3" type="checkbox" name="all3" value="">사회
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="1">의료_건강
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="2">환경
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="3">사건_사고
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="4">여성
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="5">장애인
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="6">날씨
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="7">노동_복지
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="8">사회일반
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="9">미디어
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all3-1" type="checkbox" name="all3" value="10">교육_시험
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="plus js-allBtn">+</span>
+                                <label class="subject">
+                                    <input class="js-all4" type="checkbox" name="all4" value="">문화
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="1">영화
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="2">문화일반
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="3">미술_건축
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="4">음악
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="5">방송_연예
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="6">학술_문화재
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="7">종교
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="8">요리_여행
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="9">생활
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="10">전시_공연
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all4-1" type="checkbox" name="all4" value="11">출판
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="plus js-allBtn">+</span>
+                                <label class="subject">
+                                    <input class="js-all5" type="checkbox" name="all5" value="">국제
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="1">러시아
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="2">일본
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="3">국제일반
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="4">중동_아프리카
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="5">유럽_EU
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="6">미국
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="7">중남미
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="8">중국
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="subject_detail">
+                                        <input class="js-all5-1" type="checkbox" name="all5" value="9">아시아
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn_cont">
+                        <button id="js-all-reset">초기화</button>
+                        <button id="js-all-push">적용</button>
+                    </div>
+                </div>
+
+                <!-- 사건사고 -->
+                <div id="js-accident" class="category_accident">
+                    <div class="overflow">
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="js-acBtn plus">+</span>
+                                <label class="subject">
+                                    <input class="js-ac1" type="checkbox" name="ac1" value="">범죄
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac1-1 js-ac1__" type="checkbox" name="ac1" value="">성범죄
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-1-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="1">성폭행
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-1-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="2">성추행
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-1-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="3">성희롱
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-1-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="4">성매매
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-1-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="5">음란물
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class='js-acBtn plus'>+</span>
+                                        <label class="subject">
+                                            <input class="js-ac1-2 js-ac1__" type="checkbox" name="ac1" value="">기업범죄
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-2-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="6">내부자거래
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-2-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="7">거래제한
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-2-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="8">반독점범죄
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-2-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="9">계약위반
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-2-1 js-ac1__1" type="checkbox" name="ac1"
+                                                    value="10">횡령
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac1-3 js-ac1__" type="checkbox" name="ac1" value="">정치
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-3-1 js-ac1__1" type="checkbox" name="ac1" value="11">뇌물수수
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac1-4 js-ac1__" type="checkbox" name="ac1" value="">범죄일반
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="12">방화
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="13">폭행
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="14">절도
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="15">유괴/납치
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="16">살인
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="17">사기
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac1-4-1 js-ac1__1" type="checkbox" name="ac1" value="18">마약
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="js-acBtn plus">+</span>
+                                <label class="subject">
+                                    <input class="js-ac2" type="checkbox" name="ac2" value="">사고
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="plus"></span>
+                                        <label class="subject">
+                                            <input class="js-ac2-1 js-ac2__" type="checkbox" name="ac2" value="1">스포츠사고
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac2-2 js-ac2__" type="checkbox" name="ac2" value="">산업사고
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-2-1 js-ac2__1" type="checkbox" name="ac2" value="2">붕괴
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-2-1 js-ac2__1" type="checkbox" name="ac2" value="3">폭발
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-2-1 js-ac2__1" type="checkbox" name="ac2" value="4">화재
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-2-1 js-ac2__1" type="checkbox" name="ac2" value="5">원자력사고
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac2-3 js-ac2__" type="checkbox" name="ac2" value="">교통사고
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-3-1 js-ac2__1" type="checkbox" name="ac2" value="6">항공사고
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-3-1 js-ac2__1" type="checkbox" name="ac2" value="7">우주사고
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-3-1 js-ac2__1" type="checkbox" name="ac2" value="8">해상사고
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-3-1 js-ac2__1" type="checkbox" name="ac2" value="9">철도사고
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac2-3-1 js-ac2__1" type="checkbox" name="ac2" value="10">노상사고
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="js-acBtn plus">+</span>
+                                <label class="subject">
+                                    <input class="js-ac3" type="checkbox" name="ac3" value="">재해
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac3-1 js-ac3__" type="checkbox" name="ac3" value="">자연재해
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="1">눈사태_산사태
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="2">태풍
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="3">폭염
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="4">해일
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="5">화산폭발
+                                            </label>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="6">미세먼지_황사
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="7">가뭄
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="8">지진
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac3-1-1 js-ac3__1" type="checkbox" name="ac3" value="9">홍수
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="subject_wrap">
+                                <span class="js-acBtn plus">+</span>
+                                <label class="subject">
+                                    <input class="js-ac4" type="checkbox" name="ac4" value="">사회
+                                </label>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac4-1 js-ac4__" type="checkbox" name="ac4" value="">사회문제
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="1">
+                                                사회문제
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="2">학대
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="3">중독
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="4">미성년범죄
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="5">노예
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="6">자살
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="7">빈곤
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-1-1 js-ac4__1" type="checkbox" name="ac4" value="8">성차별
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="subject_wrap sub2">
+                                        <span class="js-acBtn plus">+</span>
+                                        <label class="subject">
+                                            <input class="js-ac4-2 js-ac4__" type="checkbox" name="ac4" value="">사회갈등
+                                        </label>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-2-1 js-ac4__1" type="checkbox" name="ac4" value="9">
+                                                전쟁
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-2-1 js-ac4__1" type="checkbox" name="ac4" value="10">
+                                                테러행위
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-2-1 js-ac4__1" type="checkbox" name="ac4" value="11">
+                                                시위
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-2-1 js-ac4__1" type="checkbox" name="ac4" value="12">
+                                                반란_혁명_폭동
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="subject_detail2">
+                                                <input class="js-ac4-2-1 js-ac4__1" type="checkbox" name="ac4" value="13">
+                                                대량학살
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="btn_cont">
+                        <button id="js-ac-reset">초기화</button>
+                        <button id="js-ac-push">적용</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- 검색 결과 -->
+    <div class="wrap">
+        <div class="result_wrap">
+            <div>
+                <div class="date">
+                    2020. 11. 7
+                </div>
+                <ul>
+                    <li>
+                        <div class="result_news_item">
+                            <span class="news_title">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    [SE★현장]'인생은 아름다워' 류승룡 "이 영화로 인생의 아름다움 찾으셨으면"
+                                </a>
+                            </span>
+                            <span class="news_content">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    ‘광해, 왕이 된 남자’, ‘7번 방의 선물’, ‘명량’, ‘극한직업’ 까지, 무려 네 편의 천만 영화를 및낸 대한민국 대표 배우 류승룡이
+                                    뮤지컬
+                                    영화에
+                                    도전한wgewewweew
+                                </a>
+                            </span>
+                            <span class="news_detail">
+                                <span>서울경제</span>
+                                <span>문화>방송_연예</span>
+                                <span>2020. 11. 11</span>
+                                <span>안정은 기자</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result_news_item">
+                            <span class="news_title">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    [SE★현장]'인생은 아름다워' 류승룡 "이 영화로 인생의 아름다움 찾으셨으면"
+                                </a>
+                            </span>
+                            <span class="news_content">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    ‘광해, 왕이 된 남자’, ‘7번 방의 선물’, ‘명량’, ‘극한직업’ 까지, 무려 네 편의 천만 영화를 및낸 대한민국 대표 배우 류승룡이
+                                    뮤지컬
+                                    영화에
+                                    도전한wgewewweew
+                                </a>
+                            </span>
+                            <span class="news_detail">
+                                <span>서울경제</span>
+                                <span>문화>방송_연예</span>
+                                <span>2020. 11. 11</span>
+                                <span>안정은 기자</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result_news_item">
+                            <span class="news_title">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    [SE★현장]'인생은 아름다워' 류승룡 "이 영화로 인생의 아름다움 찾으셨으면"
+                                </a>
+                            </span>
+                            <span class="news_content">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    ‘광해, 왕이 된 남자’, ‘7번 방의 선물’, ‘명량’, ‘극한직업’ 까지, 무려 네 편의 천만 영화를 및낸 대한민국 대표 배우 류승룡이
+                                    뮤지컬
+                                    영화에
+                                    도전한wgewewweew
+                                </a>
+                            </span>
+                            <span class="news_detail">
+                                <span>서울경제</span>
+                                <span>문화>방송_연예</span>
+                                <span>2020. 11. 11</span>
+                                <span>안정은 기자</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result_news_item">
+                            <span class="news_title">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    [SE★현장]'인생은 아름다워' 류승룡 "이 영화로 인생의 아름다움 찾으셨으면"
+                                </a>
+                            </span>
+                            <span class="news_content">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    ‘광해, 왕이 된 남자’, ‘7번 방의 선물’, ‘명량’, ‘극한직업’ 까지, 무려 네 편의 천만 영화를 및낸 대한민국 대표 배우 류승룡이
+                                    뮤지컬
+                                    영화에
+                                    도전한wgewewweew
+                                </a>
+                            </span>
+                            <span class="news_detail">
+                                <span>서울경제</span>
+                                <span>문화>방송_연예</span>
+                                <span>2020. 11. 11</span>
+                                <span>안정은 기자</span>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="result_news_item">
+                            <span class="news_title">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    [SE★현장]'인생은 아름다워' 류승룡 "이 영화로 인생의 아름다움 찾으셨으면"
+                                </a>
+                            </span>
+                            <span class="news_content">
+                                <a href="">
+                                    <!-- 기사 주소 -->
+                                    ‘광해, 왕이 된 남자’, ‘7번 방의 선물’, ‘명량’, ‘극한직업’ 까지, 무려 네 편의 천만 영화를 및낸 대한민국 대표 배우 류승룡이
+                                    뮤지컬
+                                    영화에
+                                    도전한wgewewweew
+                                </a>
+                            </span>
+                            <span class="news_detail">
+                                <span>서울경제</span>
+                                <span>문화>방송_연예</span>
+                                <span>2020. 11. 11</span>
+                                <span>안정은 기자</span>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="js-searchFilter" class="searchFilter hide"></div>
+    <script type="text/javaScript" src="js/header.js"></script>
+    <script type="text/javaScript" src="js/category.js"></script>
+    <script type="text/javaScript" src="js/media.js"></script>
+    <script type="text/javaScript" src="js/all.js"></script>
+    <script type="text/javaScript" src="js/accident.js"></script>
+</body>
+
+</html>

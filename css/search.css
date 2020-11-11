@@ -1,0 +1,344 @@
+html,
+body {
+    height: 100%;
+    /* overflow: hidden; */
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+}
+
+.detail_cont {
+    width: 440px;
+    display: flex;
+    margin-top: 16px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.detail_cont .detail_btn {
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    height: 40px;
+    padding: 0 28px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 4px 8px 0 rgba(150, 150, 150, 0.1);
+}
+
+.detail_cont .detail_btn:hover {
+    background-color: #F6F6F6
+}
+
+.detail_wrap {
+    display: flex;
+    position: relative;
+}
+
+.category_media,
+.category_all,
+.category_accident {
+    position: absolute;
+    z-index: 9999;
+    top: 56px;
+}
+
+/* 언론사 */
+
+.category_media {
+    box-sizing: border-box;
+    padding: 16px 20px;
+    margin-top: 16px;
+    width: 500px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+
+    box-shadow: 0px 8px 16px 0 rgba(150, 150, 150, 0.1);
+}
+
+.media_subject {
+    width: 72px;
+    height: 32px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.media_subject input {
+    appearance: auto;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    opacity: 0.87;
+    cursor: pointer;
+}
+
+.media_subject input:checked {
+    background-color: #3a68f9;
+}
+
+.media_ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.media_detail {
+    width: 114px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-right: -0.5px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.media_detail input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 114px;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: -1;
+}
+
+.media_detail input:checked {
+    background-color: #3a68f9;
+    border: 0.5px solid #004a98;
+    border-radius: 0;
+}
+
+.media_detail input:focus {
+    outline: 0;
+}
+
+.media_detail div {
+    width: 100%;
+    line-height: 40px;
+    text-align: center;
+}
+
+.category_media .btn_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.btn_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding-top: 16px;
+}
+
+.btn_cont button {
+    width: 110px;
+    height: 32px;
+    margin: 0 2px;
+    border-radius: 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.btn_cont button:first-child {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: white;
+}
+
+.btn_cont button:last-child {
+    color: rgba(255, 255, 255, 1.0);
+    background-color: #3a68f9;
+}
+
+.btn_cont button:focus {
+    outline: 0;
+}
+
+.btn_cont button:hover {
+    opacity: 0.9;
+}
+
+/* 언론사 */
+
+/* 통합분류 */
+/* 사건사고 */
+
+.category_all {
+    box-sizing: border-box;
+    padding: 16px 20px;
+    margin-top: 16px;
+    width: 320px;
+    max-height: 424px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 8px 20px 0 rgba(150, 150, 150, 0.1);
+}
+
+.category_all .overflow {
+    overflow: scroll;
+    height: auto;
+    max-height: 360px;
+}
+
+.subject_wrap {
+    display: flex;
+    margin-bottom: 6px;
+    margin-top: 4px;
+}
+
+.subject_wrap+ul {
+    margin-bottom: 4px;
+}
+
+
+.subject_wrap+ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.plus {
+    cursor: pointer;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    font-size: 28px;
+    font-weight: lighter;
+    opacity: 0.87;
+    text-align: center;
+}
+
+.subject {
+    color: rgba(0, 0, 0, 0.87);
+    line-height: 24px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.subject input {
+    appearance: auto;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.subject_detail {
+    line-height: 24px;
+    margin-left: 48px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 4px;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.subject_detail input {
+    appearance: auto;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+
+/* 통합 분류 */
+/* 사건사고 */
+.category_accident {
+    box-sizing: border-box;
+    padding: 16px 20px;
+    margin-top: 16px;
+    width: 320px;
+    max-height: 424px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 8px 20px 0 rgba(150, 150, 150, 0.1);
+}
+
+.category_accident .overflow {
+    overflow: scroll;
+    height: auto;
+    max-height: 360px;
+}
+
+.sub2 {
+    margin-left: 26px;
+}
+
+.subject_detail2 {
+    line-height: 24px;
+    margin-left: 74px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 4px;
+    padding-right: 20px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.subject_detail2 input {
+    appearance: auto;
+    width: 18px;
+    height: 18px;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+/*  */
+.searchFilter {
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+/* JavaScript controll*/
+
+.hide {
+    display: none !important;
+}
+
+.white {
+    color: white;
+    z-index: 9;
+}
