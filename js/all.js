@@ -135,7 +135,8 @@ all4[0].style.cursor = `pointer`;
 all5[0].addEventListener(`click`, check_allAll);
 all5[0].style.cursor = `pointer`;
 
-function allReset() {
+function allReset(e) {
+    e.preventDefault();
     all1[0].checked = false;
     all2[0].checked = false;
     all3[0].checked = false;

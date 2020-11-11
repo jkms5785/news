@@ -222,7 +222,8 @@ makeEvent(3, 1); //  ac2_1,
 makeEvent(4, 1); //  ac2_1,
 makeEvent(4, 2); //  ac2_2,
 
-function acReset() {
+function acReset(e) {
+    e.preventDefault();
     // 상위
     ac1[0].checked = false;
     ac2[0].checked = false;

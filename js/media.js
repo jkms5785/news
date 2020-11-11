@@ -84,7 +84,8 @@ media1[0].addEventListener("click", check_mediaAll);
 media2[0].addEventListener("click", check_mediaAll);
 media3[0].addEventListener("click", check_mediaAll);
 
-function mediaReset() {
+function mediaReset(e) {
+    e.preventDefault();
     media1[0].checked = false;
     media2[0].checked = false;
     media3[0].checked = false;
