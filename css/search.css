@@ -200,7 +200,7 @@ body {
 }
 
 .category_all .overflow {
-    overflow: scroll;
+    overflow-y: scroll;
     height: auto;
     max-height: 360px;
 }
@@ -291,7 +291,7 @@ body {
 }
 
 .category_accident .overflow {
-    overflow: scroll;
+    overflow-y: scroll;
     height: auto;
     max-height: 360px;
 }
