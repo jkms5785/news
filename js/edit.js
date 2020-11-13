@@ -11,8 +11,7 @@ const id_noti = document.querySelector("#js-noti-id"),
     ps_noti = document.querySelector("#js-noti-ps"),
     email_noti = document.querySelector("#js-noti-email"),
     name_noti = document.querySelector("#js-noti-name");
-
-
+    
 function VALUE_CHECK() {
     if (this.value) {
         if (this.id == `js-id`) {
@@ -33,6 +32,7 @@ function EMAIL_CHECK() {
         email_noti.innerHTML = "잘못된 형식입니다.";
     } else {
         email_noti.innerHTML = "";
+        email_check = true;
     }
 }
 
@@ -88,7 +88,4 @@ function PS_CHECK() {
 
 ps.addEventListener("focusout", PS_CHECK);
 psCheck.addEventListener("focusout", PS_CHECK);
-
-
-
 email.addEventListener("focusout", EMAIL_CHECK);
