@@ -10,7 +10,7 @@ body {
 }
 
 .detail_cont {
-    width: 440px;
+    /* width: 440px; */
     display: flex;
     margin-top: 16px;
     position: absolute;
@@ -41,7 +41,8 @@ body {
 
 .category_media,
 .category_all,
-.category_accident {
+.category_accident,
+.category_date {
     position: absolute;
     z-index: 9999;
     top: 56px;
@@ -183,7 +184,7 @@ body {
 /* 언론사 */
 
 /* 통합분류 */
-/* 사건사고 */
+
 
 .category_all {
     box-sizing: border-box;
@@ -273,8 +274,9 @@ body {
     cursor: pointer;
 }
 
-
 /* 통합 분류 */
+
+
 /* 사건사고 */
 .category_accident {
     box-sizing: border-box;
@@ -321,6 +323,114 @@ body {
     cursor: pointer;
 }
 
+/* 사건사고 */
+
+/* 날짜 */
+.category_date {
+    box-sizing: border-box;
+    padding: 16px 20px;
+    margin-top: 16px;
+    width: 270px;
+    max-height: 424px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 8px 20px 0 rgba(150, 150, 150, 0.1);
+}
+
+.date_ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.date_detail {
+    width: 114px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+    margin-right: -0.5px;
+    margin-bottom: -0.5px;
+    box-sizing: border-box;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #f7f7f7;
+    font-size: 14px;
+}
+
+.date_detail input {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    z-index: -1;
+}
+
+
+.date_detail input:checked {
+    background-color: #3a68f9;
+    border: 0.5px solid #004a98;
+    border-radius: 0;
+}
+
+.all {
+    width: 228px;
+}
+
+.line {
+    border: 0.25px solid rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.date_input {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    height: 36px;
+    margin-top: 8px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+.date_input input {
+    position: absolute;
+    top: 0;
+    margin-left: 8px;
+    width: 94%;
+    height: 32px;
+    border: 0;
+    cursor: text;
+}
+
+input[type=date]:invalid::-webkit-datetime-edit {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type=date]:valid::-webkit-datetime-edit {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.6;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* 날짜 */
 /*  */
 .searchFilter {
     width: 100%;

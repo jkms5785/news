@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/newsItem.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -48,8 +50,12 @@
                 <div id="js-allBtn" class="js-detailBtn detail_btn">
                     통합분류&nbsp;&#9662;
                 </div>
-                <div id="js-accidentBtn" class="js-detailBtn detail_btn">
+                <!-- <div id="js-accidentBtn" class="js-detailBtn detail_btn">
                     사건사고&nbsp;&#9662;
+                </div> -->
+
+                <div id="js-dateBtn" class="js-detailBtn detail_btn">
+                    날짜&nbsp;&#9662;
                 </div>
             </div>
 
@@ -535,7 +541,7 @@
                 </div>
 
                 <!-- 사건사고 -->
-                <div id="js-accident" class="category_accident">
+                <!-- <div id="js-accident" class="category_accident">
                     <div class="overflow">
                         <div>
                             <div class="subject_wrap">
@@ -944,118 +950,177 @@
                         <button id="js-ac-reset">초기화</button>
                         <button id="js-ac-push">적용</button>
                     </div>
-                </div>
-            </div>
-        </div>
-    </form>
-        <!-- 검색 전 -->
-        <div class="main_wrap">
-            <div class="main_news_item">
-                <div class="category">
-                    경제
-                </div>
-                <ul>
-                    <li>
-                        <span class="news_title">
-                            <a href="">[바이든 시대] 장관 경질에도… “바이든, 트럼프 국방정책 싹 뒤집을 것”
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            한국일보
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">트럼프 대선불복 제일 답답한 바이든 "솔직히 난감해"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            조선일보wegewgwgew
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            경향신문
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            경향신문
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            경향신문
-                        </span>
-                    </li>
-                </ul>
-            </div>
+                </div> -->
 
-            <div class="main_news_item">
-                <div class="category">
-                    경제
+                <!-- 날짜 -->
+                <div id="js-date" class="category_date">
+                    <div>
+                        <ul id="js-date-ul" class="date_ul">
+                            <li>
+                                <label class="date_detail">
+                                    <input class="js-date1" type="radio" name="date" value="1">1일
+                                </label>
+                            </li>
+                            <li>
+                                <label class="date_detail">
+                                    <input class="js-date1" type="radio" name="date" value="7">1주
+                                </label>
+                            </li>
+                            <li>
+                                <label class="date_detail">
+                                    <input class="js-date1" type="radio" name="date" value="30">1개월
+                                </label>
+                            </li>
+                            <li>
+                                <label class="date_detail">
+                                    <input class="js-date1" type="radio" name="date" value="90">3개월
+                                </label>
+                            </li>
+                            <li>
+                                <label class="date_detail">
+                                    <input class="js-date1" type="radio" name="date" value="180">6개월
+                                </label>
+                            </li>
+                            <li>
+                                <label class="date_detail">
+                                    <input class="js-date1" type="radio" name="date" value="365">1년
+                                </label>
+                            </li>
+                            <li>
+                                <label class="date_detail all">
+                                    <input class="js-date1" type="radio" name="date" value="all">전체
+                                </label>
+                            </li>
+                        </ul>
+
+                        <hr class="line">
+                        <div>직접입력</div>
+                        <div class="date_input">
+                            <input type="date" name="from" max="9999-12-31" required />
+                        </div>
+                        <div class="date_input">
+                            <input type="date" max="9999-12-31" name="to" required />
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btn_cont">
+                        <button id="js-date-reset">초기화</button>
+                        <button id="js-date-push">적용</button>
+                    </div>
                 </div>
-                <ul>
-                    <li>
-                        <span class="news_title">
-                            <a href="">[바이든 시대] 장관 경질에도… “바이든, 트럼프 국방정책 싹 뒤집을 것”
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            한국일보
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">트럼프 대선불복 제일 답답한 바이든 "솔직히 난감해"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            조선일보wegewgwgew
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            경향신문
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            경향신문
-                        </span>
-                    </li>
-                    <li>
-                        <span class="news_title">
-                            <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
-                            </a>
-                        </span>
-                        <span class="news_reporter">
-                            경향신문
-                        </span>
-                    </li>
-                </ul>
             </div>
         </div>
+
+
+    </form>
+    <!-- 검색 전 -->
+    <div class="main_wrap">
+        <div class="main_news_item">
+            <div class="category">
+                경제
+            </div>
+            <ul>
+                <li>
+                    <span class="news_title">
+                        <a href="">[바이든 시대] 장관 경질에도… “바이든, 트럼프 국방정책 싹 뒤집을 것”
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        한국일보
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">트럼프 대선불복 제일 답답한 바이든 "솔직히 난감해"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        조선일보wegewgwgew
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        경향신문
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        경향신문
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        경향신문
+                    </span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main_news_item">
+            <div class="category">
+                경제
+            </div>
+            <ul>
+                <li>
+                    <span class="news_title">
+                        <a href="">[바이든 시대] 장관 경질에도… “바이든, 트럼프 국방정책 싹 뒤집을 것”
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        한국일보
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">트럼프 대선불복 제일 답답한 바이든 "솔직히 난감해"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        조선일보wegewgwgew
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        경향신문
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        경향신문
+                    </span>
+                </li>
+                <li>
+                    <span class="news_title">
+                        <a href="">폼페이오 "2기 트럼프 정부로 순조로운 전환 있을 것"
+                        </a>
+                    </span>
+                    <span class="news_reporter">
+                        경향신문
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
     </div>
 
     <div id="js-searchFilter" class="searchFilter hide"></div>
@@ -1063,8 +1128,8 @@
     <script type="text/javaScript" src="js/category.js"></script>
     <script type="text/javaScript" src="js/media.js"></script>
     <script type="text/javaScript" src="js/all.js"></script>
-    <script type="text/javaScript" src="js/accident.js"></script>
-
+    <!-- <script type="text/javaScript" src="js/accident.js"></script> -->
+    <script type="text/javaScript" src="js/date.js"></script>
 </body>
 
 </html>
